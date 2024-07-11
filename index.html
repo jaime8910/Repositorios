@@ -9,67 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Roboto Mono', monospace;
-        }
-        .bg-light {
-            background-color: #ffffff; /* Color de fondo luminoso */
-            color: #333333; /* Color del texto en fondo luminoso */
-        }
-        .bg-dark {
-            background-color: #333333; /* Color de fondo oscuro */
-            color: #ffffff; /* Color del texto en fondo oscuro */
-        }
-        .switch-container {
-            margin-left: auto; /* Mueve el switch a la derecha */
-            display: flex;
-            align-items: center;
-        }
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 40px;
-            height: 20px;
-            background-color: #ccc;
-            border-radius: 20px;
-            margin-right: 10px;
-        }
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #fff;
-            transition: .4s;
-            border-radius: 20px;
-        }
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 14px;
-            width: 14px;
-            left: 3px;
-            bottom: 3px;
-            background-color: #999;
-            transition: .4s;
-            border-radius: 50%;
-        }
-        input:checked + .slider {
-            background-color: #333;
-        }
-        input:checked + .slider:before {
-            transform: translateX(20px);
-            background-color: #fff;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -82,9 +21,12 @@
                 <div class="navbar-nav">
                     <a class="nav-link" href="#scrollspyHeading1">Quien soy</a>
                     <a class="nav-link" href="#scrollspyHeading2">Proyectos</a>
-                    <a class="nav-link" href="#scrollspyHeading3">Contacto</a>
+                    <a class="nav-link" href="#scrollspyHeading3">Habilidades</a>
+                    <a class="nav-link" href="#scrollspyHeading4">Formacion</a>
+                    <a class="nav-link" href="#scrollspyHeading5">Contacto</a>
                 </div>
                 <div class="switch-container">
+                    <img src="Imagenes/lightbulb-regular.svg" alt="" width="25" height="25">
                     <label class="switch">
                         <input id="toggleSwitch" type="checkbox">
                         <span class="slider"></span>
@@ -94,16 +36,118 @@
         </div>
     </nav>
     <div id="content" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>...</p>
+        <h4 class=".contenido" id="scrollspyHeading1">Quien soy</h4>
+        <hr>
+        <br>
+        <h5>Hola, soy Jaime Riquelme</h5>
+        <h6>Técnico en Programación y Análisis de Sistemas</h6>
+        <h6>Experiencia en Frontend y Backend</h6>
+        <br>
+        <h4 id="scrollspyHeading2">Proyectos</h4>
+        <hr>
+        <br>
+        <div class="container text-center">
+            <div class="row row-cols-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+                                    <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <br>
+        <h4 id="scrollspyHeading3">Hablidades</h4>
+        <hr>
+        <br>
+        <div class="container text-center">
+            <div class="row row-cols-6">
+              <div class="col"><img src="Imagenes/html5.svg" class="" alt=""width="100" height="100"></div>
+              <div class="col"><img src="Imagenes/css3-alt.svg" class="" alt=""width="100" height="100"></div>
+              <div class="col"><img src="Imagenes/js.svg" class="" alt=""width="100" height="100"></div>
+              <div class="col"><img src="Imagenes/bootstrap.svg" class="" alt=""width="100" height="100"></div>
+              <div class="col"><img src="Imagenes/react.svg" class="" alt=""width="100" height="100"></div>
+              <div class="col"><img src="Imagenes/python.svg" class="" alt=""width="100" height="100"></div>
+        </div>
+        </div>
+        <br>
+        <h4 id="scrollspyHeading4">Formacion</h4>
+        <hr>
+        <br>
+        <h5>Ip san sebastian (exciisa)</h5>
+        <br>
+        <h4 id="scrollspyHeading5">Contacto</h4>
+        <hr>
+        <br>
+        <h5><img src="Imagenes/envelope-solid.svg" awidth=25 height=25>  jaime89110@gmail.com</h5>
+        <h5><img src="Imagenes/phone-solid.svg" awidth=25 height=25>  +569 66986896</h5>
+        <h5><img src="Imagenes/plane-departure-solid (1).svg" awidth=25 height=25>  Santiago Chile</h5>
     </div>
     <script src="toggle.js"></script>
 </body>
